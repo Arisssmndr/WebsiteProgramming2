@@ -9,17 +9,24 @@ class CategoryController extends Controller
 {
     //
         public function index () {
-        //$title = "Produk";
-        //$dataproduk = Produk::getDataProduk();
-
         $categories = Category::GetAll();
-        //dd ($categories);
         return view ('categories.index', compact('categories'));
     }
         public function create () {
-        echo "Ini Halman Proses Simpan";
+        return view ('/categories/create');
     }
-        public function store () {
-        echo "Ini Halman Indek Produk";
+        public function store (Request $request) {
+            $data = [
+                'category_name' => $request->category_name
+            ];
+            
+            $store = Category::store($data);
+            if($store){
+                echo "Data berhasil di simpan";
+            } else {
+                echo "Data gagal di simpan";
+            }
+
     }
+
 }

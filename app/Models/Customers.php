@@ -8,9 +8,8 @@ use Illuminate\Support\Facades\DB;
 class Customers extends Model
 {
     //
-    public static function GetAllCustomers(){
+    public static function GetCustomers(){
         $customers = DB::table('customers')->get();
         return $customers;
-
     }
 }

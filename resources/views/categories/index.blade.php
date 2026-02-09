@@ -7,7 +7,8 @@
     <title>Category</title>
 </head>
 <body>
-    Ini halaman categories
+    Ini halaman categories <br>
+    <a href="/categories/create">Tambah Kategori</a>
     <table border="1">
         <thead>
             <tr>

@@ -11,6 +11,8 @@ class Category extends Model
     public static function GetAll(){
         $categories = DB::table('categories')->get();
         return $categories;
-
+    }
+    public static function store($data){
+        return DB::table('categories')->insert($data);
     }
 }

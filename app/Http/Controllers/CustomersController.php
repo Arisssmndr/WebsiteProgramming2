@@ -9,7 +9,7 @@ class CustomersController extends Controller
 {
     //
         public function index () {
-        $customers = Customers::GetAllCustomers();
+        $customers = Customers::GetCustomers();
         //dd ($customers);
         return view ('customers.index', compact('customers'));
     }

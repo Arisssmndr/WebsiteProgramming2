@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Produk extends Model
 {
     //
-    public static function getDataProduk()
+    public static function getProduk()
     {
         $dataproduk = [
             [

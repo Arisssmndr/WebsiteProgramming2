@@ -9,10 +9,10 @@ class ProdukController extends Controller
 {
     //
     public function index () {
-        $title = "Produk";
-        $dataproduk = Produk::getDataProduk();
+
+        $dataproduk = Produk::getProduk();
         //dd ($dataproduk);
-        return view ('produk.index', compact('title', 'dataproduk'));
+        return view ('produk.index',['nama' => 'Aris Munandar', 'title2' => 'Produkkk'], compact( 'dataproduk'));
     }
         public function create () {
         echo "Ini Halman Proses Simpan";

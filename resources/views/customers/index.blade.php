@@ -18,14 +18,13 @@
             </tr>
         </thead>
         <tbody>
-            @foreach ( $customers as $customer )
+            @foreach ( $customers as $customers )
             <tr>
-                <th>{{ $customer->id }}</th>
-                <th>{{ $customer->customer_code }}</th>
-                <th>{{ $customer->customer_name }}</th>
-                <th>{{ $customer->customer_phone }}</th>
+                <th>{{ $customers->id }}</th>
+                <th>{{ $customers->customer_code }}</th>
+                <th>{{ $customers->customer_name }}</th>
+                <th>{{ $customers->customer_phone }}</th>
             </tr>
-
             @endforeach
         </tbody>
     </table>
