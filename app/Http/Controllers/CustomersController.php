@@ -7,16 +7,59 @@ use Illuminate\Http\Request;
 
 class CustomersController extends Controller
 {
-    //
-        public function index () {
-        $customers = Customers::GetCustomers();
-        //dd ($customers);
-        return view ('customers.index', compact('customers'));
+    /**
+     * Display a listing of the resource.
+     */
+    public function index()
+    {
+        //
     }
-        public function create () {
-        echo "Ini Halman Proses Simpan";
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function create()
+    {
+        //
     }
-        public function store () {
-        echo "Ini Halman Indek Produk";
+
+    /**
+     * Store a newly created resource in storage.
+     */
+    public function store(Request $request)
+    {
+        //
+    }
+
+    /**
+     * Display the specified resource.
+     */
+    public function show(Customers $customers)
+    {
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     */
+    public function edit(Customers $customers)
+    {
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     */
+    public function update(Request $request, Customers $customers)
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function destroy(Customers $customers)
+    {
+        //
     }
 }
